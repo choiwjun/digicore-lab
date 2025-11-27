@@ -1,0 +1,251 @@
+/* COMPANY Page Styles */
+
+.company-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-mint) 100%);
+  color: var(--white);
+  padding: 140px 0 80px;
+  text-align: center;
+}
+
+.company-hero h1 {
+  color: var(--white);
+  margin-bottom: var(--spacing-md);
+}
+
+.company-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro-section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.intro-text h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.intro-text p {
+  color: var(--gray-700);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.intro-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, var(--gray-200), var(--gray-300));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.vision-section {
+  background-color: var(--gray-bg);
+  padding: var(--spacing-xxl) 0;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.vision-card {
+  background-color: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.vision-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+  color: var(--white);
+  font-size: 36px;
+}
+
+.vision-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.vision-card p {
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.certification-section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.cert-highlight {
+  max-width: 800px;
+  margin: var(--spacing-xl) auto;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, #E6F0FF, #F0F9FF);
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--primary-blue);
+}
+
+.cert-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.cert-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-blue);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.cert-info h3 {
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+}
+
+.cert-info p {
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.cert-details {
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.cert-details h4 {
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary-black);
+}
+
+.cert-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-details li {
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.cert-details li:last-child {
+  border-bottom: none;
+}
+
+.cert-details li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: var(--weight-bold);
+  font-size: 18px;
+}
+
+.values-section {
+  background-color: var(--gray-bg);
+  padding: var(--spacing-xxl) 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.value-item {
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.value-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.value-number {
+  font-size: 48px;
+  font-weight: var(--weight-bold);
+  color: var(--primary-blue);
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.value-item h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.value-item p {
+  color: var(--gray-600);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .company-hero {
+    padding: 120px 0 60px;
+  }
+
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-hero {
+    padding: 100px 0 50px;
+  }
+
+  .intro-image {
+    height: 280px;
+  }
+
+  .vision-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-badge {
+    flex-direction: column;
+    text-align: center;
+  }
+}
