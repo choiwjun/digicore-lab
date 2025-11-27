@@ -50,13 +50,13 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--primary-blue);
-  color: var(--primary-blue);
+  border-color: var(--primary-red);
+  color: var(--primary-red);
 }
 
 .filter-btn.active {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
   color: var(--white);
 }
 
@@ -160,7 +160,7 @@
 }
 
 .portfolio-link {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-weight: var(--weight-semibold);
   font-size: 15px;
   display: inline-flex;
@@ -175,7 +175,7 @@
 
 /* Portfolio Detail Page */
 .detail-hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-mint) 100%);
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
   color: var(--white);
   padding: 140px 0 80px;
 }
@@ -268,7 +268,7 @@
 
 .detail-card h3 {
   margin-bottom: var(--spacing-sm);
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .detail-card ul {
@@ -287,7 +287,7 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 /* Results/Stats */
@@ -315,7 +315,7 @@
   display: block;
   font-size: 48px;
   font-weight: var(--weight-bold);
-  color: var(--primary-blue);
+  color: var(--primary-red);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -398,7 +398,7 @@
 .testimonial-quote::before {
   content: '"';
   font-size: 64px;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   opacity: 0.3;
   position: absolute;
   top: 20px;
@@ -417,7 +417,7 @@
   width: 60px;
   height: 60px;
   border-radius: var(--radius-full);
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-red));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,7 +457,7 @@
 }
 
 .nav-project:hover {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
   transform: translateX(8px);
 }

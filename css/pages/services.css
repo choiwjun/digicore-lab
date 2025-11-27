@@ -2,7 +2,7 @@
 
 /* Service Hero */
 .service-hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-mint) 100%);
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
   color: var(--white);
   padding: 140px 0 80px;
   text-align: center;
@@ -38,11 +38,11 @@
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  border-left: 4px solid var(--primary-blue);
+  border-left: 4px solid var(--primary-red);
 }
 
 .problem-item h3 {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   margin-bottom: var(--spacing-sm);
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
 .problem-icon {
   width: 40px;
   height: 40px;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
   border-radius: var(--radius-md);
   display: flex;
@@ -113,7 +113,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-weight: var(--weight-bold);
   font-size: 20px;
 }
@@ -147,7 +147,7 @@
 .feature-icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-red));
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -191,8 +191,8 @@
 }
 
 .tech-item:hover {
-  border-color: var(--primary-blue);
-  background-color: var(--primary-blue);
+  border-color: var(--primary-red);
+  background-color: var(--primary-red);
   color: var(--white);
   transform: translateY(-2px);
 }
@@ -223,13 +223,13 @@
   top: 80px;
   bottom: -40px;
   width: 2px;
-  background: linear-gradient(to bottom, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(to bottom, var(--primary-red), var(--primary-red));
 }
 
 .process-number {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-red));
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -323,7 +323,7 @@
   display: block;
   font-size: 24px;
   font-weight: var(--weight-bold);
-  color: var(--primary-blue);
+  color: var(--primary-red);
   margin-bottom: 4px;
 }
 

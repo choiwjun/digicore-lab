@@ -36,7 +36,7 @@
 }
 
 .logo span {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .nav {
@@ -60,7 +60,7 @@
 }
 
 .nav-link:hover {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .nav-link.active::after {
@@ -69,8 +69,8 @@
   bottom: -8px;
   left: 0;
   right: 0;
-  height: 2px;
-  background-color: var(--primary-blue);
+  height: 3px;
+  background-color: var(--primary-red);
 }
 
 .nav-actions {
@@ -97,12 +97,12 @@
 }
 
 .lang-btn.active {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
 }
 
 .lang-btn:hover {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .mobile-menu-toggle {
@@ -168,7 +168,7 @@
 .mobile-nav-link:hover,
 .mobile-nav-link.active {
   background-color: var(--gray-bg);
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .mobile-nav-actions {
@@ -219,7 +219,7 @@
 }
 
 .footer-link:hover {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .footer-description {
@@ -233,9 +233,9 @@
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: rgba(0, 82, 255, 0.1);
+  background-color: rgba(255, 23, 68, 0.15);
   border-radius: var(--radius-md);
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-size: 14px;
   font-weight: var(--weight-semibold);
   margin-top: var(--spacing-sm);
@@ -274,7 +274,7 @@
 }
 
 .social-link:hover {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   transform: translateY(-2px);
 }
 
@@ -284,11 +284,11 @@
 }
 
 .text-primary {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
-.text-accent {
-  color: var(--accent-mint);
+.text-red {
+  color: var(--primary-red);
 }
 
 .bg-gray {
@@ -361,6 +361,36 @@
     flex-direction: column;
     text-align: center;
   }
+}
+
+/* Floating Chat Button - PLAY.D Style */
+.floating-chat {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-red);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(255, 23, 68, 0.4);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  z-index: 999;
+  text-decoration: none;
+}
+
+.floating-chat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 23, 68, 0.5);
+}
+
+.floating-chat:active {
+  transform: scale(0.95);
 }
 
 /* Page Layout */

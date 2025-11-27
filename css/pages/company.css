@@ -1,7 +1,7 @@
 /* COMPANY Page Styles */
 
 .company-hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-mint) 100%);
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
   color: var(--white);
   padding: 140px 0 80px;
   text-align: center;
@@ -74,7 +74,7 @@
 .vision-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-red));
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@
   padding: var(--spacing-xl);
   background: linear-gradient(135deg, #E6F0FF, #F0F9FF);
   border-radius: var(--radius-lg);
-  border-left: 6px solid var(--primary-blue);
+  border-left: 6px solid var(--primary-red);
 }
 
 .cert-badge {
@@ -116,7 +116,7 @@
 .cert-icon {
   width: 80px;
   height: 80px;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@
 }
 
 .cert-info h3 {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   margin-bottom: 8px;
 }
 
@@ -168,7 +168,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-weight: var(--weight-bold);
   font-size: 18px;
 }
@@ -201,7 +201,7 @@
 .value-number {
   font-size: 48px;
   font-weight: var(--weight-bold);
-  color: var(--primary-blue);
+  color: var(--primary-red);
   opacity: 0.2;
   line-height: 1;
   margin-bottom: var(--spacing-sm);

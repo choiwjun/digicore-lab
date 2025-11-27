@@ -1,7 +1,7 @@
 /* CONTACT Page Styles */
 
 .contact-hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-mint) 100%);
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
   color: var(--white);
   padding: 140px 0 80px;
   text-align: center;
@@ -58,7 +58,7 @@
 .info-icon {
   width: 48px;
   height: 48px;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -80,12 +80,12 @@
 }
 
 .info-content a {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   transition: color var(--transition-fast);
 }
 
 .info-content a:hover {
-  color: var(--accent-mint);
+  color: var(--primary-red);
 }
 
 /* Multi-Step Form */
@@ -119,7 +119,7 @@
   top: 20px;
   left: 0;
   height: 2px;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   transition: width var(--transition-base);
   z-index: 1;
 }
@@ -148,13 +148,13 @@
 }
 
 .progress-step.active .step-circle {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
   transform: scale(1.1);
 }
 
 .progress-step.completed .step-circle {
-  background-color: var(--accent-mint);
+  background-color: var(--primary-red);
   color: var(--white);
 }
 
@@ -165,7 +165,7 @@
 }
 
 .progress-step.active .step-label {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-weight: var(--weight-semibold);
 }
 
@@ -212,7 +212,7 @@
 }
 
 .form-group label span {
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .form-control {
@@ -227,7 +227,7 @@
 
 .form-control:focus {
   outline: none;
-  border-color: var(--primary-blue);
+  border-color: var(--primary-red);
   box-shadow: 0 0 0 3px rgba(0, 82, 255, 0.1);
 }
 
@@ -282,13 +282,13 @@ textarea.form-control {
 }
 
 .radio-option input[type="radio"]:checked + label {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
   color: var(--white);
 }
 
 .radio-option label:hover {
-  border-color: var(--primary-blue);
+  border-color: var(--primary-red);
 }
 
 /* File Upload */
@@ -303,7 +303,7 @@ textarea.form-control {
 }
 
 .file-upload:hover {
-  border-color: var(--primary-blue);
+  border-color: var(--primary-red);
   background-color: var(--gray-bg);
 }
 
@@ -387,7 +387,7 @@ textarea.form-control {
 .success-icon {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-mint));
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-red));
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -447,7 +447,7 @@ textarea.form-control {
 
 .faq-icon {
   font-size: 24px;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   transition: transform var(--transition-fast);
 }
 

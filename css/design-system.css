@@ -4,80 +4,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;600;700&family=Noto+Sans:wght@300;400;600;700&display=swap');
 
 :root {
-  /* Color Palette */
-  --primary-blue: #0052FF;
+  /* Color Palette - PLAY.D Style */
+  --primary-red: #FF1744;
+  --primary-red-dark: #D50000;
   --secondary-black: #111111;
-  --accent-mint: #00D4A6;
-  --gray-bg: #F5F6F7;
+  --gray-bg: #FAFAFA;
   --white: #FFFFFF;
 
   /* Additional Colors */
   --gray-100: #F8F9FA;
-  --gray-200: #E9ECEF;
-  --gray-300: #DEE2E6;
-  --gray-400: #CED4DA;
-  --gray-500: #ADB5BD;
-  --gray-600: #6C757D;
-  --gray-700: #495057;
-  --gray-800: #343A40;
-  --gray-900: #212529;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
 
   /* Typography */
   --font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
 
-  /* Font Sizes */
-  --h1-size: 64px;
-  --h1-size-tablet: 48px;
-  --h1-size-mobile: 36px;
+  /* Font Sizes - PLAY.D Style (Larger) */
+  --h1-size: 72px;
+  --h1-size-tablet: 56px;
+  --h1-size-mobile: 40px;
 
-  --h2-size: 40px;
-  --h2-size-tablet: 32px;
-  --h2-size-mobile: 28px;
+  --h2-size: 48px;
+  --h2-size-tablet: 36px;
+  --h2-size-mobile: 32px;
 
-  --h3-size: 28px;
-  --h3-size-tablet: 24px;
-  --h3-size-mobile: 20px;
+  --h3-size: 32px;
+  --h3-size-tablet: 28px;
+  --h3-size-mobile: 24px;
 
   --body-size: 18px;
   --body-size-mobile: 16px;
 
-  --caption-size: 14px;
-  --caption-size-mobile: 13px;
+  --caption-size: 15px;
+  --caption-size-mobile: 14px;
 
   /* Font Weights */
   --weight-light: 300;
   --weight-regular: 400;
   --weight-semibold: 600;
   --weight-bold: 700;
+  --weight-black: 900;
 
-  /* Spacing */
+  /* Spacing - PLAY.D Style (More generous) */
   --spacing-xs: 8px;
   --spacing-sm: 16px;
-  --spacing-md: 24px;
-  --spacing-lg: 40px;
-  --spacing-xl: 64px;
-  --spacing-xxl: 96px;
+  --spacing-md: 32px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-xxl: 120px;
 
-  /* Border Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  /* Border Radius - PLAY.D Style (Larger rounded corners) */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  /* Shadows - PLAY.D Style (Minimal) */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.1);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s ease;
 
-  /* Container */
-  --container-max: 1200px;
-  --container-padding: 24px;
+  /* Container - PLAY.D Style (Wider) */
+  --container-max: 1400px;
+  --container-padding: 40px;
 }
 
 /* Typography Styles */
@@ -123,87 +125,88 @@ p {
   line-height: 1.5;
 }
 
-/* Button Styles */
+/* Button Styles - PLAY.D Style */
 .btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 16px 40px;
   border-radius: var(--radius-md);
   font-size: 16px;
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-bold);
   text-align: center;
   transition: all var(--transition-base);
   cursor: pointer;
   border: none;
+  text-decoration: none;
 }
 
 .btn-primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: #0041CC;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  background-color: var(--primary-red-dark);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
   background-color: var(--white);
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+  color: var(--secondary-black);
+  border: 2px solid var(--gray-300);
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-blue);
-  color: var(--white);
+  background-color: var(--gray-100);
+  border-color: var(--gray-400);
 }
 
 .btn-large {
-  padding: 18px 40px;
+  padding: 20px 48px;
   font-size: 18px;
 }
 
 .btn-small {
-  padding: 10px 24px;
-  font-size: 14px;
+  padding: 12px 28px;
+  font-size: 15px;
 }
 
-/* Badge Styles */
+/* Badge Styles - PLAY.D Style */
 .badge {
   display: inline-block;
-  padding: 6px 16px;
+  padding: 8px 20px;
   border-radius: var(--radius-full);
   font-size: var(--caption-size);
   font-weight: var(--weight-semibold);
 }
 
 .badge-venture {
-  background-color: #E6F0FF;
-  color: var(--primary-blue);
+  background-color: #FFE8EE;
+  color: var(--primary-red);
 }
 
 .badge-success {
-  background-color: #D4F5E9;
-  color: #00875A;
+  background-color: #E8F5E9;
+  color: #2E7D32;
 }
 
 .badge-info {
-  background-color: #E0F7FA;
-  color: #0097A7;
+  background-color: var(--gray-200);
+  color: var(--gray-700);
 }
 
-/* Card Styles */
+/* Card Styles - PLAY.D Style (Minimal shadow) */
 .card {
   background-color: var(--white);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
+  border: 1px solid var(--gray-200);
   transition: all var(--transition-base);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-4px);
+  border-color: var(--gray-300);
+  transform: translateY(-2px);
 }
 
 /* Container */
